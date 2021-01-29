@@ -13,6 +13,12 @@ body{
     background-attachment: scroll;
     background-size: cover;
 }
+.btnPlusMinus{
+    color: #3352F2;
+    border: none;
+    background-color: white;
+    font-size: 35px;
+}
 
 nav{
     height: 50px;

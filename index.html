@@ -11,7 +11,7 @@
         rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
 </head>
 
 <body>
@@ -52,20 +52,24 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input id="firstClassTicketNumber" class="inp-style inp-width" type="number" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <!-- <p>+ -</p> -->
+                    <button class="btnPlusMinus"><span id="firstClassPlus">+</span></button>
+                    <button class="btnPlusMinus"><span id="firstClassMinus">-</span></button>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input id="economyTicketNumber" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span>+</span> <span>-</span> </p>
+                    <!-- <p> <span>+</span> <span>-</span> </p> -->
+                    <button class="btnPlusMinus"><span id="economyPlus">+</span></button>
+                    <button class="btnPlusMinus"><span id="economyMinus">-</span></button>
                 </div>
             </div>
             <div class="calculations">
@@ -74,7 +78,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p>$<span id="subtotal">0</span></p>
                     </div>
                 </div>
 
@@ -83,7 +87,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p>$<span id="vat">0</span></p>
                     </div>
                 </div>
                 <hr>
@@ -92,7 +96,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p>$<span id="total">0</span></p>
                     </div>
                 </div>
             </div>
@@ -105,6 +109,8 @@
         </div>
     </section>
     <!--Thank You-->
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
